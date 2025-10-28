@@ -10,6 +10,8 @@ import phase.tutorialmod.TutorialMod;
 
 public class ModItems {
     public static final Item SHMOE_BEAN = registerItem("shmoe_bean", new Item(new Item.Settings()));
+    public static final Item PINK_GARNET = registerItem("pink_garnet", new Item(new Item.Settings()));
+    public static final Item RAW_PINK_GARNET = registerItem("raw_pink_garnet", new Item(new Item.Settings()));
 
 
     private static Item registerItem(String name, Item item) {
@@ -21,6 +23,8 @@ public class ModItems {
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(entries -> {
             entries.add(SHMOE_BEAN);
+            entries.add(PINK_GARNET);
+            entries.add(RAW_PINK_GARNET);
         });
     }
 
